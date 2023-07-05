@@ -135,6 +135,15 @@ a{
   text-decoration: none;
 }
 
+img{
+  width: 100%;
+}
+
+figure{
+  margin: 0;
+  width: 60%;
+}
+
  .content-wrapper{
   width: 90%;
   margin: 50px 0;
@@ -179,9 +188,13 @@ header nav ul li {
   font-size: 1.125em;
 }
 
+
 .hero-area{
+  background: url('../img/unplugged-retreat.jpg') center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
+  height: 500px;
 }
 
 aside{
@@ -201,6 +214,8 @@ aside{
 .features{
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat;
+  background-size: cover;
 }
 
 .features h2 {
@@ -209,6 +224,7 @@ aside{
 
 .features p{
   margin: 0;
+  text-align: center;
 }
 
 .features article{
@@ -253,7 +269,7 @@ aside{
 .contact{
   display: flex;
   justify-content: center;
-  background-color: #2a423a;
+  flex-wrap: wrap;
 }
 
 .contact-content p{
@@ -441,6 +457,7 @@ input[type=button] {
    ========================================================================== */
 
 @media screen and (min-width: 768px) {
+/*Tablet styles here*/
   h2{
     font-size: 2.25em;
     line-height: 48px;
@@ -453,6 +470,11 @@ input[type=button] {
 
   .contact h4{
     font-size: 1.5em;
+  }
+
+  .contact-content{
+    width: 20%;
+
   }
 
   .content-wrapper {
@@ -477,8 +499,16 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  figure{
+    width: 30%;
+  }
+
   .header-divider {
     display: none;
+  }
+
+  .hero-area{
+    height: 600px;
   }
 
   aside .content-wrapper {
@@ -510,8 +540,17 @@ input[type=button] {
     justify-content: space-between;
   }
 
-  .reviews article div {
+  .reviews article div, .reviews article figure{
     width: 49%;
+  }
+
+  .reviews h2{
+    width: 85%;
+  }
+
+  .reviews h3{
+    width: 75%;
+    margin: 0;
   }
 
   footer{
@@ -581,7 +620,6 @@ input[type=button] {
       font-size: .87em;
       line-height: 15.75px;
     }
-  /*Tablet styles here*/
 
 }
 
@@ -603,9 +641,14 @@ input[type=button] {
       max-width: 960px;
     }
 
+  .hero-area{
+    height: 600px;
+  }
 
   .hero-area h1{
-    width: 80%;
+    width: 70%;
+    font-size: 3em;
+    
   }
 
   header {
