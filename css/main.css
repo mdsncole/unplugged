@@ -324,11 +324,12 @@ input[type=button] {
   text-align: center;
 }
 
-/* IDK
+
 .features-icon{
   font-size: 3.75em;
+  margin-bottom: 40px;
 }
-*/
+
 
 .reviews{
   display: flex;
